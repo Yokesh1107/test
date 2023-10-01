@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="./forms.css">
+</head>
+
+<body>
+    <div class="forms">
+        <h1>REGISTRATION FORM</h1>
+        <form method="post" id="formid" onsubmit="print(event)" class="formelements">
+            <div class="formelement"><label>Leader :</label> <input type="text" id="teamleader" name="teamleader"><br />
+            </div>
+            <div class="formelement"><label>Team member 1 :</label> <input type="text" id="team1" name="team1"><br />
+            </div>
+            <div class="formelement"><label>Team member 2 :</label> <input type="text" id="team3" name="team3"><br />
+            </div>
+            <div class="formelement"><label>Team member 3 :</label> <input type="text" id="team2" name="team2"><br />
+            </div>
+            <div class="formelement"><label>College name : </label><input type="text" id="clg" name="clg"><br /></div>
+            <div class="formelement"><label>Department :</label> <input type="text" id="dept" name="dept"><br /></div>
+            <div class="formelement"><label>Year :</label> <input type="text" id="year" name="year"><br /></div>
+            <div class="formelement"><label>Mail :</label> <input type="email" id="mail" name="mail"><br />
+            </div>
+            <div class="formelement"><label for="events" name="events" id="events">Events: </label></div>
+
+            <div class="formelement">
+                <div class="input1"><input type="checkbox" id="event1" name="event1">Event 1
+                    <input type="checkbox" id="event2" name="event2">Event 2
+                    <input type="checkbox" id="event3" name="event3">Event 3
+                    <input type="checkbox" id="event4" name="event4">Event 4
+                    <input type="checkbox" id="event5" name="event5">Event 5<br />
+                </div>
+            </div>
+            <div class="formelement"><label>Phone Number :</label> <input type="number" id="phone" name="phone"><br />
+            </div>
+            <input type="submit" class="submit" value="Register">
+        </form>
+    </div>
+    <script>
+        const print = async (e) => {
+
+            e.preventDefault();
+            var elements = document.getElementById("formid").elements;
+            const obj = {};
+            for (var i = 0; i < elements.length; i++) {
+                var item = elements.item(i);
+                if (item.type == 'checkbox') {
+                    obj[item.name] = item.checked
+
+                } else {
+
+                    obj[item.name] = item.value;
+                }
+                // if(item.name=='event1'||item.name=='event2'||item.name=='event3'||item.name=='event4'||item.name=='event5')
+            }
+            // console.log(radio.value)
+            console.log(obj)
+            const res = await fetch('https://registers.onrender.com/register', {
+                method: 'POST',
+                // mode: 'no-cors',
+                body: JSON.stringify(obj),
+                headers: { 'Content-type': 'application/json' },
+                credentials: 'include',
+            })
+            if (res.status === 200) {
+                alert('registration succesful')
+                location.replace('./index.html')
+            }
+
+        }
+    </script>
+    <!-- <script src="../register.js"></script> -->
+
+</body>
+
+</html>
