@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     overflow-x: hidden;
@@ -22,7 +26,7 @@ body {
 header {
     background-color: #020912;
     /* position: fixed; */
-    animation: drop-in 5s ease 200ms backwards;
+    animation: drop-in 1.5s ease 200ms backwards;
     top: 0;
     left: 0;
 
@@ -95,7 +99,6 @@ i:nth-child(1) {
     color: black;
     background-color: white;
     border-radius: 10px;
-    text-shadow: 2px 1px gold;
 }
 
 #welcome {
@@ -106,12 +109,12 @@ i:nth-child(1) {
     color: #A5A5A8;
     font-family: 'Staatliches', cursive;
     padding-left: 100px;
-    animation: drop-in 5s ease 20ms backwards;
+    /* animation: drop-in 5s ease 20ms backwards; */
     font-size: 40px;
 }
 
 #p {
-    animation: drop-in 5s ease 20ms backwards;
+    animation: drop-in 2s ease 20ms backwards;
 
 }
 
@@ -131,7 +134,7 @@ i:nth-child(1) {
 
 #dept {
     font-size: 20px;
-    animation: drop-in 4s ease 2ms backwards;
+    animation: drop-in 2s ease 2ms backwards;
     padding-left: 100px;
     margin-top: -50px;
     color: #f3e8e8;
@@ -487,12 +490,15 @@ span {
 }
 
 .content {
-    font-family: 'Kavivanar', cursive;
+    /* font-family: 'Kavivanar', cursive; */
     font-size: 25px;
     margin-bottom: 0px;
     margin-left: 700px;
     margin-right: 100px;
 }
+
+
+
 
 .wrapper {
     background-image: url('./rmd_logo.png');
@@ -622,6 +628,25 @@ div .dot {
     top: 130%;
 }
 
+.map {
+    text-align: center;
+    padding: 10px;
+    /* width: 70%; */
+}
+
+iframe {
+    /* box-shadow: 10px 10px gold; */
+    border-radius: 20px;
+    border: 70px solid blue;
+    width: 70%;
+    height: 250px;
+}
+
+iframe:hover {
+    transition: 0.5s;
+    transform: scale(1.01);
+}
+
 @keyframes animate {
     0% {
         transform: scale(0) translateY(0) rotate(70deg);
@@ -675,7 +700,8 @@ div .dot {
 }
 
 .topic {
-
+    text-align: center;
+    color: white;
     background-color: #d3dad53f;
     font-family: 'Encode Sans SC', sans-serif;
     letter-spacing: 5px;
@@ -916,6 +942,50 @@ div .dot {
 
 #screentopic {
     font-size: 0;
+}
+
+.icons {
+    font-size: 20px;
+    padding: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.instagram,
+.whatsapp,
+.linkedin {
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid white;
+}
+
+.instagram {
+    border: solid #d30035;
+}
+
+.whatsapp {
+    border: solid rgb(2, 172, 2);
+}
+
+.linkedin {
+    border: solid #0A66A2;
+}
+
+.instagram:hover,
+.whatsapp:hover,
+.linkedin:hover {
+    transition: 0.5s;
+    background-color: silver;
+    border: silver;
+    /* box-shadow: 2px 20px black; */
+    /* color: #020912; */
+    transform: scale(1.1);
+}
+
+.icons a {
+
+    text-decoration: none;
 }
 
 @media(max-width:1080px) {
@@ -1172,5 +1242,10 @@ div .dot {
 
     .popuprulesp {
         font-size: 50px;
+    }
+
+    iframe {
+        width: 900px;
+        height: 500px;
     }
 }

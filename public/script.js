@@ -11,7 +11,7 @@ const reload = () => {
         <a href="#about">ABOUT</a>
         <a href="#events">EVENTS</a>
         <a href="./register.html">REGISTER</a>
-        <a href="">CONTACT US</a>
+        <a href="#contact">CONTACT US</a>
     </nav>
 
 </header>
@@ -69,7 +69,28 @@ const reload = () => {
 <div class="popupcontent"><div class="popupabout"><h2>ABOUT</h2><div class="popupaboutp" id="popupaboutp">This contains content for about.This contains content for aboutThis contains content for aboutThis contains content for aboutThis contains content for aboutThis contains content for about</div></div><div class="centerline"></div><div class="popuprules"><h2>RULES</h2><div class="popuprulesp" id="popuprulesp">* This contains pop up rules content.This contains pop up rules content.This contains pop up rules content.</br>* This contains pop up rules content.</br>* This contains pop up rules content.</br>* This contains pop up rules content.</br>* This contains pop uThis contains pop up rules content.</br>* rules content.</div></div></div><div class="popfooter"><a href="./register.html" target="_blank"><button  >Register</button></a></div>
 </div></div><div class="containerbox1" id="nonevent1">
 <div class="eventcontent1"><h1>EVENT 1</h1><p>This paragraph is for content of the eveents.This paragraph is for content of the eveents.This paragraph is for content of the eveents.This paragraph is for content of the eveents.This paragraph is for content of the eveents</p></div><div class="slogan"><p>SLogan.Slogan.Slogan</p></div><div class="eventbutton"><button onclick="nonevent1()">Know more</button></div><div class="hovertext">This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.</div></div>
-<div class="containerbox1" id="nonevent2"><div class="eventcontent1"><h1>EVENT 1</h1><p>This paragraph is for content of the eveents.This paragraph is for content of the eveents.This paragraph is for content of the eveents.This paragraph is for content of the eveents.This paragraph is for content of the eveents</p></div><div class="slogan"><p>SLogan.Slogan.Slogan</p></div><div class="eventbutton"><button onclick="nonevent2()">Know more</button></div><div class="hovertext">This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.</div></div></div></section>`
+<div class="containerbox1" id="nonevent2"><div class="eventcontent1"><h1>EVENT 1</h1><p>This paragraph is for content of the eveents.This paragraph is for content of the eveents.This paragraph is for content of the eveents.This paragraph is for content of the eveents.This paragraph is for content of the eveents</p></div><div class="slogan"><p>SLogan.Slogan.Slogan</p></div><div class="eventbutton"><button onclick="nonevent2()">Know more</button></div><div class="hovertext">This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.This contains text that comes when this element this hovered.</div></div></div></section>
+<section class="contact" id="contact">
+<h1 class="topic">Contact Us</h1>
+<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.858432787611!2d80.13819837508319!3d13.359077486993044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d807d6e1207f9%3A0x2beed88a75a3fe40!2sR.M.D.%20Engineering%20college!5e0!3m2!1sen!2sin!4v1696180906328!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<div class="icons">
+<div class="instagram"><a href="#" style="color:#d30035" class="fa fa-instagram"> Instagram</a></div>
+<div class="whatsapp"><a href="#" class="fa fa-whatsapp" style="color:rgb(2, 172, 2)"> Whatsapp</a></div>
+<div class="linkedin"><a href="#" style="color:#0A66A2" class="fa fa-linkedin"> Linkedin</a></div>
+</div>
+</section>
+`
+
+    ScrollReveal().reveal('.about', { reset: true });
+    ScrollReveal().reveal('.about', { duration: 2000 });
+    ScrollReveal().reveal('.events', { reset: true });
+    ScrollReveal().reveal('.events', { duration: 2000 });
+    ScrollReveal().reveal('.nontechevents', { duration: 2000 });
+    ScrollReveal().reveal('.nontechevents', { reset: true });
+    // ScrollReveal().reveal('.icons');
+    // ScrollReveal().reveal('.contact', { reset: true });
+
+    console.log(document.body)
 }
 function event1() {
     popheader.innerHTML = `<h1>EVENT 1</h1>
@@ -158,7 +179,7 @@ setTimeout(reload, 1000)
 let width = screen.width
 console.log(width)
 if (width <= 1000) {
-    // document.getElementById('script').remove()
+    document.getElementById('script').remove()
 
     // screentopic.innerText = `<p style="color:white">Hello</p>`
 
