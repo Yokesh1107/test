@@ -88,3 +88,28 @@ input.checked {
 .formelement>label {
     flex: 1;
 }
+
+#loading {
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid #ffffff;
+    border-top: 6px solid #9c41f2;
+    border-radius: 100%;
+    margin: auto;
+    visibility: hidden;
+    animation: spin 1s infinite linear;
+}
+
+#loading.display {
+    visibility: visible;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
