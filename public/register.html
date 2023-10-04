@@ -44,10 +44,13 @@
                     required><br />
             </div>
             <input type="submit" class="submit" value="Register">
+            <div id="loading"></div>
         </form>
     </div>
     <script>
         const print = async (e) => {
+            console.log("clicked")
+            document.getElementById('loading').style.visibility = 'visible'
             let x = document.forms["myform"]["phone"].value;
             if (x.length != 10) {
                 alert('Enter valid phone number')
@@ -77,14 +80,17 @@
             }
             // console.log(radio.value)
             console.log(obj)
-            const res = await fetch('https://registers.onrender.com/register', {
+            const res = await fetch('http://localhost:2003/register', {
                 method: 'POST',
                 // mode: 'no-cors',
                 body: JSON.stringify(obj),
                 headers: { 'Content-type': 'application/json' },
                 credentials: 'include',
             })
+
             if (res.status === 200) {
+                document.getElementById('loading').visibility = 'hidden'
+                // hideLoading()
                 alert('registration succesful')
                 location.replace('./index.html')
             }
