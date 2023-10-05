@@ -2128,7 +2128,7 @@ iframe:hover {
         background-size: 100%;
         margin: 0;
         margin-left: 50px;
-        top: 125%;
+        top: 130%;
         height: 300px;
         padding: 110px;
         width: 110px;
@@ -2140,7 +2140,7 @@ iframe:hover {
         margin: 0;
         padding: 150px;
         /* margin-left: 100px; */
-        margin-top: -400px;
+        margin-top: -600px;
     }
 
     #rmdlogo {
