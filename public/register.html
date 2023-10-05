@@ -49,7 +49,7 @@
     </div>
     <script>
         const print = async (e) => {
-            console.log("clicked")
+           
             document.getElementById('loading').style.visibility = 'visible'
             let x = document.forms["myform"]["phone"].value;
             if (x.length != 10) {
@@ -79,7 +79,7 @@
                 // if(item.name=='event1'||item.name=='event2'||item.name=='event3'||item.name=='event4'||item.name=='event5')
             }
             // console.log(radio.value)
-            console.log(obj)
+         
             const res = await fetch('https://registers.onrender.com/register', {
                 method: 'POST',
                 // mode: 'no-cors',
