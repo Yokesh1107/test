@@ -1,10 +1,15 @@
 // let text = document.getElementById('text');
+const changeDept = () => {
+    document.getElementById('dept').innerHTML = `DEPARTMENT OF <span class="fast-flicker" id="cap1" >I</span>NFORMATION <span id="cap2" class="fast-flicker">T</span>ECHNOLOGY`
+    console.log(document.getElementById('dept'))
+}
+
 
 var x = 1
 const reload = () => {
     document.getElementById('first').remove()
     const first = document.getElementById('reload')
-    first.innerHTML = `<header>
+    first.innerHTML = ` <header>
     <span class="logo">LOGO</span>
     <nav class="links">
         <a href="">HOME</a>
@@ -16,7 +21,11 @@ const reload = () => {
 
 </header>
 
+<marquee width="100%" direction="right" height="100px">
+This is a sample scrolling text that has scrolls texts to right.
+</marquee>
 <section class="home" id="home">
+
 
 <div id="clgdept">
 <h1 id="welcome"><img src='./rmd_logo.png' id='rmdlogo'><span id="college" >RMD ENGINEERING COLLEGE</span><br/></h1>
@@ -25,7 +34,7 @@ const reload = () => {
 <p id="p">PROUDLY PRESENTS</p>
 </div>
 <div id="screentopic" style="color:white"><p><span class="flicker2">T</span>OP<span class="flicker2">I</span>C</p></div>
-<h1 id="text"> <span class="fast-flicker">T</span>O<span class="flicker">PI</span>C</h1>
+<h1 id="text"> <span class="fast-flicker">T</span>OP<span class="flicker">I</span>C</h1>
     
 </section><section class="about"id="about" >
 <h1 class="topic" >About</h1>
@@ -80,18 +89,73 @@ const reload = () => {
 </div>
 </section>
 `
+    const text = baffle("#dept");
+    text.set({
+        characters: '░▒░ ░██░> ████▓ >█> ░/█>█ ██░░ █<▒ ▓██░ ░/░▒',
+        speed: 120
+    });
+
+    text.start();
+    text.reveal(4000);
+    const p = baffle("#p");
+    p.set({
+        characters: '░▒░ ░██░> ████▓ >█> ░/█>█ ██░░ █<▒ ▓██░ ░/░▒',
+        speed: 120
+    });
+
+    p.start();
+    p.reveal(4000);
+    // changeDept()
+    setTimeout(changeDept, 2500)
 
     ScrollReveal().reveal('.about', { reset: true });
-    ScrollReveal().reveal('.about', { duration: 2000 });
+    ScrollReveal().reveal('.about', { duration: 1000 });
     ScrollReveal().reveal('.events', { reset: true });
-    ScrollReveal().reveal('.events', { duration: 2000 });
-    ScrollReveal().reveal('.nontechevents', { duration: 2000 });
+    ScrollReveal().reveal('.events', { duration: 1000 });
+    ScrollReveal().reveal('.nontechevents', { duration: 1000 });
     ScrollReveal().reveal('.nontechevents', { reset: true });
     // ScrollReveal().reveal('.icons');
     // ScrollReveal().reveal('.contact', { reset: true });
+    var i = 0;
+    var go_forward;
 
+    bg_gradient_animation();
+
+    function bg_gradient_animation() {
+        if (i <= 0)
+            go_forward = true;
+        if (i >= 100)
+            go_forward = false;
+
+        if (go_forward)
+            i += 0.5;
+        else
+            i -= 0.3;
+
+        college.style['background-image'] = `linear-gradient(to right,  #FFFFFF ${i - 10}%,#fff ${i}%,#000000 ${i + 10}%`;
+
+        requestAnimationFrame(bg_gradient_animation);
+    }
     console.log(document.body)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function event1() {
     popheader.innerHTML = `<h1>EVENT 1</h1>
     <button onclick="closeDiv()">X</button>`
@@ -189,10 +253,12 @@ if (width > 1000) {
     window.addEventListener('scroll', () => {
         // document.getElementById('screentopic').remove()
         // document.getElementById('clgdept').remove()
+        const part = document.getElementById('particle-container')
+        console.log(part)
         let value = window.scrollY;
         console.log(value)
         if (value === 0) {
-            college.style.fontSize = 40 + 'px'
+            college.style.fontSize = 60 + 'px'
         } else {
             screentopic.style.fontSize = 0
             college.style.fontSize = 0 + 'px'
@@ -236,6 +302,7 @@ if (width > 1000) {
 
         }
 
+        // part.style.marginTop = value * 1 + 'px'
         about.style.marginTop = value * -0.5 + 'px'
         wrapper.style.marginTop = value * -0.6 + 'px'
         wrapper1.style.marginTop = value * -0.4 + 'px'
