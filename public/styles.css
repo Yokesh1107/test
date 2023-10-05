@@ -1428,7 +1428,7 @@ marquee {
 .content {
     font-family: 'Pompiere', cursive;
     /* font-family: 'Kavivanar', cursive; */
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 0px;
     margin-left: 700px;
     margin-right: 100px;
@@ -1451,7 +1451,7 @@ marquee {
 .wrapper {
     background-image: url('./rmd_logo.png');
     background-position: center;
-    background-size: 80%;
+    background-size: 70%;
     background-repeat: no-repeat;
     padding: 70px;
     left: 0%;
