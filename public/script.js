@@ -1,7 +1,7 @@
 // let text = document.getElementById('text');
 const changeDept = () => {
     document.getElementById('dept').innerHTML = `DEPARTMENT OF <span class="fast-flicker" id="cap1" >I</span>NFORMATION <span id="cap2" class="fast-flicker">T</span>ECHNOLOGY`
-    console.log(document.getElementById('dept'))
+   
 }
 
 
@@ -136,7 +136,7 @@ This is a sample scrolling text that has scrolls texts to right.
 
         requestAnimationFrame(bg_gradient_animation);
     }
-    console.log(document.body)
+   
 }
 
 
@@ -241,7 +241,7 @@ setTimeout(reload, 1000)
 //     containerbox.style.background = 'grey'
 // })
 let width = screen.width
-console.log(width)
+
 if (width <= 1000) {
     document.getElementById('script').remove()
 
@@ -254,9 +254,9 @@ if (width > 1000) {
         // document.getElementById('screentopic').remove()
         // document.getElementById('clgdept').remove()
         const part = document.getElementById('particle-container')
-        console.log(part)
+        
         let value = window.scrollY;
-        console.log(value)
+        
         if (value === 0) {
             college.style.fontSize = 60 + 'px'
         } else {
