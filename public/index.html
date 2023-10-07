@@ -3,7 +3,7 @@
 
 <head>
     <title>Index</title>
-    <link href="stylesheet.css" rel="stylesheet">
+    <link href="../stylesheets/stylesheet.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
@@ -33,10 +33,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Zen+Tokyo+Zoo&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
-    <script src="./particles.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.oncontextmenu = function () {
+            alert('Right click is disabled')
+            return false;
+        }
+        $(document).keydown(function (event) {
+            if (event.keyCode == 123) {
+                alert('Right click is disabled')
+                return false;
+            }
+            else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+                alert('Right click is disabled')
+                return false;
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -55,7 +71,7 @@
 
     <script>ScrollReveal().reveal('.first');</script>
 
-    <script id="script" src="script.js"></script>
+    <script id="script" src="../scripts/script.js"></script>
 
 </body>
 
