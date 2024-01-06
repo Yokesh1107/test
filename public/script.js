@@ -69,9 +69,9 @@ Register before 31st January 2024. Participate and win exciting prizes.
 </div></div>
 
 <div class="containerbox" id="event1" >
-<div class="eventcontent" data-hover="Hovered content"><h1>Scriptoria's Secret</h1><p>Dive into knowledge at our Paper Presentation Event, where concise ideas meet eloquent expression, sparking insightful discussions and inspirations.</p></div><div class="slogan"><p>Pages Speak, Minds Listen</p></div><div class="eventbutton"><button onclick="event1()">Know more</button></div><div id="hovertext" class="hovertext">An intellectual showcase where minds converge to unfold research, insights, and ideas. Participants, representing diverse fields, distill their knowledge into concise, impactful presentations. The audience becomes part of a dynamic exchange, fostering discussions and networking. It's more than an academic showcase; it's a celebration of intellect, communication skills, and collaborative exploration, creating a vibrant tapestry of knowledge and discovery.</div></div>
+<div class="eventcontent" data-hover="Hovered content"><h1>Scriptoria's Secret</h1><p>Dive into knowledge at our Paper Presentation Event, where concise ideas meet eloquent expression, sparking discussions, inspirations.</p></div><div class="slogan"><p>Pages Speak, Minds Listen</p></div><div class="eventbutton"><button onclick="event1()">Know more</button></div><div id="hovertext" class="hovertext">An intellectual showcase where minds converge to unfold research, insights, and ideas. Participants, representing diverse fields, distill their knowledge into concise, impactful presentations. The audience becomes part of a dynamic exchange, fostering discussions and networking. It's more than an academic showcase; it's a celebration of intellect, communication skills, and collaborative exploration, creating a vibrant tapestry of knowledge and discovery.</div></div>
 
-<div class="containerbox" id="event2"><div class="eventcontent"><h1>Code Quasar</h1><p>Enter the world of swift solutions at our Coding Event, where concise code speaks volumes and excellence takes center stage.</p></div><div class="slogan"><p>Crack, Code, Celebrate!</p></div><div class="eventbutton"><button onclick="event2()">Know more</button></div><div class="hovertext">An exhilarating competition where programming prowess takes center stage. Participants face rapid challenges, showcasing quick thinking and innovative solutions. The event sparks a dynamic exchange of coding brilliance, fostering a community of sharp minds and creative problem solvers. Join us in this coding adventure, where speed, precision, and ingenuity converge for a thrilling celebration of programming excellence.</div></div><div class="containerbox" id="event3"><div class="eventcontent"><h1>Mensa Mingle</h1><p>Rapid-fire brilliance in our Quiz Event — short questions, quick thinking, and the pursuit of quiz glory await participants!</p></div><div class="slogan"><p>Swift Minds, Quiz Finds</p></div><div class="eventbutton"><button onclick="event3()">Know more</button></div><div class="hovertext">Step into the Quiz Arena, where intellect meets excitement! Our Quiz Event is a dynamic contest of knowledge, with quick questions and sharp answers. Participants engage in a fast-paced journey of trivia, showcasing their brilliance and quick thinking. The atmosphere is buzzing with energy as competitors vie for victory, creating a thrilling spectacle of wit and wisdom. Join us for an evening of rapid-fire challenges, camaraderie, and the joy of learning in this exciting Quiz Event.</div></div></div>
+<div class="containerbox" id="event2"><div class="eventcontent"><h1>Code Quasar</h1><p>Enter the world of swift solutions at our Coding Event, where concise code speaks volumes and excellence takes center stage.</p></div><div class="slogan"><p>Crack, Code, Celebrate!</p></div><div class="eventbutton"><button onclick="event2()">Know more</button></div><div class="hovertext">An exhilarating competition where programming prowess takes center stage. Participants face rapid challenges, showcasing quick thinking and innovative solutions. The event sparks a dynamic exchange of coding brilliance, fostering a community of sharp minds and creative problem solvers. Join us in this coding adventure, where speed, precision, and ingenuity converge for a thrilling celebration of programming excellence.</div></div><div class="containerbox" id="event3"><div class="eventcontent"><h1>Mensa Mingle</h1><p>Dive into a world of quick challenges, sharp minds, and a whirlwind of knowledge at our high-energy Quiz Event.</p></div><div class="slogan"><p>Swift Minds, Quiz Finds</p></div><div class="eventbutton"><button onclick="event3()">Know more</button></div><div class="hovertext">Step into the Quiz Arena, where intellect meets excitement! Our Quiz Event is a dynamic contest of knowledge, with quick questions and sharp answers. Participants engage in a fast-paced journey of trivia, showcasing their brilliance and quick thinking. The atmosphere is buzzing with energy as competitors vie for victory, creating a thrilling spectacle of wit and wisdom. Join us for an evening of rapid-fire challenges, camaraderie, and the joy of learning in this exciting Quiz Event.</div></div></div>
 </div><div class="nontechevents" style="color:white"><div class="container1"><div class= "struct1" id= "div1">
 <div class= "prompt">
 <div class="popheader" id="popheader">
@@ -130,21 +130,21 @@ Register before 31st January 2024. Participate and win exciting prizes.
 
     bg_gradient_animation();
 
-    function bg_gradient_animation() {
-        if (i <= 0)
-            go_forward = true;
-        if (i >= 100)
-            go_forward = false;
+    // function bg_gradient_animation() {
+    //     if (i <= 0)
+    //         go_forward = true;
+    //     if (i >= 100)
+    //         go_forward = false;
 
-        if (go_forward)
-            i += 0.5;
-        else
-            i -= 0.3;
+    //     if (go_forward)
+    //         i += 0.5;
+    //     else
+    //         i -= 0.3;
 
-        college.style['background-image'] = `linear-gradient(to right,  #FFFFFF ${i - 10}%,#fff ${i}%,#000000 ${i + 10}%`;
+    //     // college.style['background-image'] = `linear-gradient(to right,  #FFFFFF ${i - 10}%,#fff ${i}%,#000000 ${i + 10}%`;
 
-        requestAnimationFrame(bg_gradient_animation);
-    }
+    //     requestAnimationFrame(bg_gradient_animation);
+    // }
 
 }
 
@@ -284,14 +284,14 @@ if (width > 1000) {
         let value = window.scrollY;
 
         if (value === 0) {
-            college.style.fontSize = 60 + 'px'
+            college.style.fontSize = 55 + 'px'
         } else {
             screentopic.style.fontSize = 0
             college.style.fontSize = 0 + 'px'
 
         }
         if (value === 0) {
-            dept.style.fontSize = 20 + 'px'
+            dept.style.fontSize = 25 + 'px'
         } else {
             dept.style.fontSize = 0 + 'px'
 
@@ -303,13 +303,13 @@ if (width > 1000) {
 
         }
         if (value === 0) {
-            cap1.style.fontSize = 30 + 'px'
+            cap1.style.fontSize = 35 + 'px'
         } else {
             cap1.style.fontSize = 0 + 'px'
 
         }
         if (value === 0) {
-            cap2.style.fontSize = 30 + 'px'
+            cap2.style.fontSize = 35 + 'px'
         } else {
             cap2.style.fontSize = 0 + 'px'
 
