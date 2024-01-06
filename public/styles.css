@@ -2082,17 +2082,17 @@ iframe:hover {
     }
 
     #college {
-        margin-left: -30px;
+        margin-left: -100px;
         text-align: center;
-        font-size: 120px;
+        font-size: 80px;
         letter-spacing: 2px;
     }
 
     #dept {
-        margin-left: -60px;
+        margin-left: -200px;
         text-align: center;
         letter-spacing: 5px;
-        margin-top: 40px;
+        margin-top: 10px;
         font-size: 40px;
 
     }
@@ -2113,7 +2113,7 @@ iframe:hover {
         text-align: center;
         padding-top: 50px;
         width: 600px;
-        margin-left: -30px;
+        margin-left: -150px;
         font-size: 30px;
         font-weight: bold;
     }
@@ -2133,7 +2133,8 @@ iframe:hover {
     }
 
     .about {
-        margin-top: -350px;
+        margin-top: -450px;
+        height: 1200px;
     }
 
     .content {
@@ -2148,7 +2149,7 @@ iframe:hover {
         background-size: 100%;
         margin: 0;
         margin-left: 50px;
-        top: 130%;
+        top: 135%;
         height: 300px;
         padding: 110px;
         width: 110px;
@@ -2227,7 +2228,7 @@ iframe:hover {
     .containerbox p {
         /* font-family: 'Pompiere', cursive; */
         font-family: 'Poppins', sans-serif;
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .containerbox1 {
@@ -2254,7 +2255,7 @@ iframe:hover {
     }
 
     .containerbox1 p {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .eventbutton {
@@ -2286,20 +2287,20 @@ iframe:hover {
     }
 
     .hovertext {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .containerbox:hover .hovertext {
-        transform: translateY(-850px);
+        transform: translateY(-800px);
     }
 
     .containerbox1:hover .hovertext {
-        transform: translateY(-800px);
+        transform: translateY(-750px);
     }
 
     .struct {
         margin-top: -900px;
-        background: #5e5d5a;
+        background: #fffffe;
         height: auto;
         width: 90%;
     }
@@ -2309,17 +2310,20 @@ iframe:hover {
         padding: 20px;
         width: auto;
         height: auto;
-        background: silver;
+        background: rgb(255, 255, 255);
         display: flex;
         flex-direction: column;
         color: #020912;
     }
 
     .prompt h1 {
-        font-size: 90px;
+        font-weight: bolder;
+        color: gold;
+        font-size: 70px;
     }
 
     .popupcontent {
+        color: black;
         justify-content: space-around;
         padding: 50px;
         flex-direction: column;
@@ -2348,11 +2352,15 @@ iframe:hover {
     }
 
     .popupaboutp {
-        font-size: 50px;
+        font-weight: bolder;
+        color: black;
+        font-size: 30px;
     }
 
     .popuprulesp {
-        font-size: 50px;
+        color: black;
+        font-size: 30px;
+        font-weight: bolder;
     }
 
     iframe {
