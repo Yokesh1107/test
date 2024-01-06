@@ -24,12 +24,12 @@ h1 {
     padding: 100px;
     align-items: center;
 
-    font-family: 'Staatliches', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 input[type=text],
 input[type=email] {
-    font-family: 'Staatliches', cursive;
+    font-family: 'Poppins', sans-serif;
     border: none;
     font-size: 20px;
 }
@@ -51,7 +51,8 @@ input[type=email] {
 label {
     font-weight: bolder;
     font-size: 25px;
-    text-shadow: 1px 1px silver;
+    color: #ffffff;
+    text-shadow: 2px 2px black;
 }
 
 .formelements {

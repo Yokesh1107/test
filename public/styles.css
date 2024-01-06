@@ -29,7 +29,7 @@ body {
     font-family: 'Foldit', cursive;
     color: white;
     font-size: 40px;
-    letter-spacing: 15px;
+    letter-spacing: 0px;
 }
 
 #particle-container {
@@ -48,7 +48,7 @@ header {
     animation: drop-in 1.5s ease 200ms backwards;
     top: 0;
     left: 0;
-    margin-top: -30px;
+    /* margin-top: -10px; */
     /* font-family: myFirstFont; */
     width: 95.5%;
     padding: 30px;
@@ -1079,8 +1079,9 @@ i:nth-child(1) {
 
 
 marquee {
-    color: red;
-    font-size: 20px;
+    color:goldenrod;
+        font-family: 'Concert One', cursive;
+    font-size: 25px;
 }
 
 .home {
@@ -1468,52 +1469,7 @@ marquee {
     width: 100%;
 }
 
-ul {
-    /* display: block; */
-    width: 100%;
-    height: 100%;
-    /* height: inherit; */
-}
 
-ul {
-    list-style-type: none;
-}
-
-li:nth-child(1) {
-    position: absolute;
-    left: 10%;
-    height: 30px;
-    width: 30px;
-    background: rgba(255, 255, 255, .2);
-}
-
-li:nth-child(2) {
-    position: absolute;
-    left: 30%;
-    height: 45px;
-    width: 45px;
-    background: rgba(255, 255, 255, .2);
-}
-
-li:nth-child(3) {
-    position: absolute;
-    left: 50%;
-    height: 70px;
-    width: 70px;
-    background: rgba(255, 255, 255, .2);
-}
-
-li:nth-child(4) {
-    position: absolute;
-    left: 80%;
-    height: 20px;
-    width: 20px;
-    background: rgba(255, 255, 255, .2);
-}
-
-li {
-    animation: animate 15s linear 1s infinite;
-}
 
 @keyframes animate {
     from {
@@ -1688,7 +1644,7 @@ iframe:hover {
 
 .container {
     /* margin-top: 100px; */
-
+    /* height: 2000px; */
     display: flex;
     color: wheat;
     padding: 50px;
@@ -1717,6 +1673,7 @@ iframe:hover {
     min-height: 200px;
     width: 50vw;
     margin: 10px auto;
+    /* padding: 20px; */
     /* background: white; */
     border-radius: 5px;
     /* box-shadow: inset 0px 0px 0px 2px rgb(0, 255, 255); */
@@ -1745,7 +1702,7 @@ iframe:hover {
 
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
+    width: 320px;
     height: 450px;
 }
 
@@ -1818,10 +1775,14 @@ iframe:hover {
     justify-content: space-between;
 
 }
+.prompt h2{
+    font-size: 30px;
+}
 
 .popheader h1 {
+    padding-top: 20px;
     text-align: center;
-    margin-left: 500px;
+    margin-left: 400px;
     font-size: 50px;
     color: white;
 }
@@ -1835,7 +1796,7 @@ iframe:hover {
 .popupcontent {
     display: flex;
     justify-content: space-around;
-    padding: 15px;
+    padding: 30px;
 }
 
 .popupabout {
@@ -1843,7 +1804,9 @@ iframe:hover {
 }
 
 .popupaboutp {
-    padding: 20px;
+    /* font-family: 'Lato', sans-serif; */
+    padding: 40px;
+    font-size: 23px;
 }
 
 .popuprules {
@@ -1852,8 +1815,9 @@ iframe:hover {
 }
 
 .popuprulesp {
-    padding: 20px;
-    /* text-align: center; */
+    /* font-family: 'Lato', sans-serif; */
+    padding: 40px;
+    font-size: 23px;
     flex: 1;
 }
 
@@ -1865,7 +1829,7 @@ iframe:hover {
 }
 
 .popfooter {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .popfooter button {
@@ -1894,11 +1858,22 @@ iframe:hover {
     opacity: 1;
     /* margin-top: 100px; */
     /* content: 'NEWdcnadkjcbakjcnaksjxnxaskjxnaskjxnaskjxnkajsxnkajsxnaksjxnakjn'; */
-    transform: translateY(-300px);
+    transform: translateY(-350px);
     transition: 1s;
 }
 
-
+.containerbox h1{
+    margin-top: 15px;
+}
+.containerbox p{
+    margin-top: 40px;
+}
+.containerbox1 h1{
+    margin-top: 15px;
+}
+.containerbox1 p{
+    margin-top: 40px;
+}
 
 .containerbox1:hover {
     background: #020912;
@@ -1924,18 +1899,24 @@ iframe:hover {
         0 1px 20px rgba(236, 233, 233, 0.702),
         0 1px 7px rgba(228, 224, 224, 0.806),
         0 1px 7px rgba(255, 255, 255, 0.012);
-    min-height: 200px;
-    width: 50vw;
+    /* min-height: 100px; */
+    height: 450px;
+    width: 25vw;
     margin: 10px auto;
+    /* padding: 20px; */
     /* background: white; */
     border-radius: 5px;
+    /* box-shadow: inset 0px 0px 0px 2px rgb(0, 255, 255); */
+    /* padding: 150px; */
     overflow: hidden;
-    /* border: 2px solid rgb(0, 255, 255); */
-    background-image: url('./nontech.gif');
+    /* background-image: url('./code1bg.png'); */
+    background-image: url('./code1.gif');
+
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
+    width: 320px;
     height: 450px;
+    /* border: 2px solid rgb(0, 255, 255); */
 }
 
 
@@ -1985,12 +1966,14 @@ iframe:hover {
 .slogan {
     letter-spacing: 2px;
     margin-top: 30px;
+    font-size: 20px;
     color: #020912;
     font-weight: bolder;
     background-color: #d4ddd76c;
 }
 
 #screentopic {
+    
     font-size: 0;
 }
 
@@ -2100,8 +2083,8 @@ iframe:hover {
 
     #screentopic {
         margin-top: 200px;
-        margin-left: 350px;
-        font-size: 200px;
+        font-size:150px;
+    margin-left:130px;
     }
 
     #screentopic p,
@@ -2244,7 +2227,7 @@ iframe:hover {
         font-weight: bolder;
         font-size: 30px;
         padding: 20px;
-        margin-top: 100px;
+        margin-top: 200px;
     }
 
     .container1 {
@@ -2254,7 +2237,9 @@ iframe:hover {
         justify-content: space-between;
 
     }
-
+    .slogan{
+        margin-top: 150px;
+    }
     .links a {
         letter-spacing: 0;
         margin: 0;
@@ -2267,7 +2252,7 @@ iframe:hover {
     }
 
     .containerbox:hover .hovertext {
-        transform: translateY(-800px);
+        transform: translateY(-850px);
     }
 
     .containerbox1:hover .hovertext {
