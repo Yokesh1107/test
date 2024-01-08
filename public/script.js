@@ -115,37 +115,17 @@ Event Date: <span  style="font-size:25px;font-weight:bolder">5th Febraury</span>
 
     p.start();
     p.reveal(4000);
-    // changeDept()
     setTimeout(changeDept, 2500)
 
     ScrollReveal().reveal('.about', { reset: true });
     ScrollReveal().reveal('.about', { duration: 1000 });
     ScrollReveal().reveal('.events', { reset: true });
     ScrollReveal().reveal('.events', { duration: 1000 });
-    // ScrollReveal().reveal('.nontechevents', { duration: 1000 });
-    // ScrollReveal().reveal('.nontechevents', { reset: true });
-    // ScrollReveal().reveal('.icons');
-    // ScrollReveal().reveal('.contact', { reset: true });
+   
     var i = 0;
     var go_forward;
 
-    bg_gradient_animation();
-
-    // function bg_gradient_animation() {
-    //     if (i <= 0)
-    //         go_forward = true;
-    //     if (i >= 100)
-    //         go_forward = false;
-
-    //     if (go_forward)
-    //         i += 0.5;
-    //     else
-    //         i -= 0.3;
-
-    //     // college.style['background-image'] = `linear-gradient(to right,  #FFFFFF ${i - 10}%,#fff ${i}%,#000000 ${i + 10}%`;
-
-    //     requestAnimationFrame(bg_gradient_animation);
-    // }
+    
 
 }
 
@@ -226,36 +206,20 @@ function openDiv() {
     blurcontainer2.style.display = 'none'
     blurcontainer3.style.opacity = '0'
     let get = document.getElementById('div')
-    // hovertext.style./display = 'none'
     get.style.display = 'block'
     let blurcontainer5 = document.getElementById('nonevent1')
     let blurcontainer4 = document.getElementById('nonevent2')
-    // let blurcontainer3 = document.getElementById('event3')
     blurcontainer5.style.display = 'none'
     blurcontainer4.style.display = 'none'
-    // blurcontainer3.style.opacity = '0'
-    // let get1 = document.getElementById('div1')
-    // // hovertext.style./display = 'none'
-    // get1.style.display = 'block'
-    // get.style.transition = '2s'
+    
 }
 function openDiv1() {
-    // let blurcontainer1 = document.getElementById('nonevent1')
-    // let blurcontainer2 = document.getElementById('nonevent2')
-    // // let blurcontainer3 = document.getElementById('event3')
-    // blurcontainer1.style.display = 'none'
-    // blurcontainer2.style.display = 'none'
-    // // blurcontainer3.style.opacity = '0'
+    
     let get = document.getElementById('div1')
-    // hovertext.style./display = 'none'
+   
+    get.style.opacity='1'
     get.style.display = 'block'
-    // get.style.transition = '2s'
-    // let blurcontainer3 = document.getElementById('event1')
-    // let blurcontainer4 = document.getElementById('event2')
-    // let blurcontainer5 = document.getElementById('event3')
-    // blurcontainer3.style.opacity = '0'
-    // blurcontainer4.style.display = 'none'
-    // blurcontainer5  .style.opacity = '0'
+    
 }
 function closeDiv() {
     let blurcontainer1 = document.getElementById('event1')
@@ -269,7 +233,7 @@ function closeDiv() {
     get.style.display = 'none'
     let blurcontainer4 = document.getElementById('nonevent1')
     let blurcontainer5 = document.getElementById('nonevent2')
-    // let blurcontainer3 = document.getElementById('event3')
+   
     blurcontainer4.style.display = 'block'
     blurcontainer5.style.display = 'block'
 }
@@ -282,31 +246,27 @@ function closeDiv1() {
     blurcontainer3.style.opacity = '1'
     let blurcontainer4 = document.getElementById('nonevent1')
     let blurcontainer5 = document.getElementById('nonevent2')
-    // let blurcontainer3 = document.getElementById('event3')
+   
     blurcontainer4.style.display = 'block'
     blurcontainer5.style.display = 'block'
-    // blurcontainer3.style.opacity = '1'
-
+   
     let get = document.getElementById('div1')
     get.style.display = 'none'
 }
 setTimeout(reload, 3000)
-// containerbox.addEventListener('onmouseover', () => {
-//     containerbox.style.background = 'grey'
-// })
+
 let width = screen.width
 
 if (width <= 1000) {
     document.getElementById('script').remove()
 
-    // screentopic.innerText = `<p style="color:white">Hello</p>`
+   
 
 
 }
 if (width > 1000) {
     window.addEventListener('scroll', () => {
-        // document.getElementById('screentopic').remove()
-        // document.getElementById('clgdept').remove()
+        
         const part = document.getElementById('particle-container')
 
         let value = window.scrollY;
@@ -356,19 +316,17 @@ if (width > 1000) {
 
         }
 
-        // part.style.marginTop = value * 1 + 'px'
         about.style.marginTop = value * -0.5 + 'px'
         wrapper.style.marginTop = value * -0.6 + 'px'
         wrapper1.style.marginTop = value * -0.4 + 'px'
         events.style.marginTop = value * 0.44 + 'px'
-        // content.style.marginTop = value * -0.3 + 'px'
-
+        
 
         wrapper.style.left = Math.min(value * 1, 350) + 'px'
         wrapper1.style.left = Math.min(value * 1, 350) + 'px'
 
 
-        //  console.log(text)
+        
 
     })
 }
