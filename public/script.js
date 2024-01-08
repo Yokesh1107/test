@@ -10,7 +10,7 @@ const reload = () => {
     document.getElementById('first').remove()
     const first = document.getElementById('reload')
     first.innerHTML = ` <header>
-    <span class="logo">Techcrescenza'24</span>
+    <a href="index.html" style="text-decoration:none"><span class="logo">Techcrescenza'24</span></a>
     <nav class="links">
         <a href="">HOME</a>
         <a href="#about">ABOUT</a>
@@ -22,7 +22,7 @@ const reload = () => {
 </header>
 
 <marquee width="100%" direction="right" height="100px" >
-Register before 31st January 2024. Participate and win exciting prizes.
+Event Date: <span  style="font-size:25px;font-weight:bolder">5th Febraury</span>. Register before 31st January 2024. Participate and win exciting prizes.
 </marquee>
 <section class="home" id="home">
 
@@ -79,7 +79,7 @@ Register before 31st January 2024. Participate and win exciting prizes.
 <button onclick="closeDiv1()">X</button></div>
 <div class="popupcontent"><div class="popupabout"><h2>ABOUT</h2><div class="popupaboutp" id="popupaboutp"><ul><li>This is a Website Design Contest.</li><li>Required Hardware and software will be provided in the venue.</li><li>This is a point based event.</li><li>Points will be based on attractiveness and no. of functionalities implemented.</li></ul></div></div><div class="centerline"></div><div class="popuprules"><h2>RULES</h2><div class="popuprulesp" id="popuprulesp"><ul><li>One team must have 2 participants.</li><li>Website must be designed with HTML, CSS, JAVASCRIPT.</li><li>No CSS framework should be used.</li><li>Functionalities to be implemented will be given on the spot.</li><li>Jury decision will be final.</li></ul></div></div></div><div class="popfooter"><a href="./register.html" target="_blank"><button  >Register</button></a></div>
 </div></div><div class="containerbox1" id="nonevent1">
-<div class="eventcontent1"><h1>Croma Meister</h1><p>Ignite the digital realm in our Web Design Contest—short, powerful entries redefine online aesthetics, merging creativity and functionality.</p></div><div class="slogan"><p>Craft, Click, Cheers!</p></div><div class="eventbutton"><button onclick="nonevent1()">Know more</button></div><div class="hovertext">A creative showcase where digital innovation takes the spotlight. Participants craft visually stunning online experiences, balancing aesthetics and functionality. This event celebrates the art of web design, inviting designers to redefine digital landscapes with their short, impactful creations. Join us for a journey where pixels transform into masterpieces, and every click unveils a world of creativity and user-centric design.
+<div class="eventcontent1"><h1>Croma Meister</h1><p>Ignite the digital realm in our Web Design Contest—short, powerful entries redefine online aesthetics, merging creativity and functionality.</p></div><div class="slogan"><p>Craft, Click, Cheers!</p></div><div class="eventbutton" ><button id="scroll1" onclick="nonevent1()">Know more</button></div><div class="hovertext">A creative showcase where digital innovation takes the spotlight. Participants craft visually stunning online experiences, balancing aesthetics and functionality. This event celebrates the art of web design, inviting designers to redefine digital landscapes with their short, impactful creations. Join us for a journey where pixels transform into masterpieces, and every click unveils a world of creativity and user-centric design.
 
 
 
@@ -87,14 +87,15 @@ Register before 31st January 2024. Participate and win exciting prizes.
 
 
 </div></div>
-<div class="containerbox1" id="nonevent2"><div class="eventcontent1"><h1>Suprise Event</h1><p>Register and wait for the suprise event</p></div><div class="slogan"><p>!    !     !</p></div><div class="eventbutton"><button ><a href="register.html" style="text-decoration:none;">Register</a></button></div><div class="hovertext">Suprise event!!!!!!!!!!</div></div></div></section>
+<div class="containerbox1" id="nonevent2"><div class="eventcontent1"><h1>Suprise Event</h1><p>Register and wait for the suprise event</p></div><div class="slogan"><p>!    !     !</p></div><div class="eventbutton"><button ><a href="register.html" style="text-decoration:none; color:black">Register</a></button></div><div class="hovertext">Suprise !!!!!!!!!!</div></div></div></section>
 <section class="contact" id="contact">
 <h1 class="topic">Contact Us</h1>
 <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.858432787611!2d80.13819837508319!3d13.359077486993044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d807d6e1207f9%3A0x2beed88a75a3fe40!2sR.M.D.%20Engineering%20college!5e0!3m2!1sen!2sin!4v1696180906328!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 <div class="icons">
-<div class="instagram"><a href="#" style="color:#d30035" class="fa fa-instagram"> Instagram</a></div>
-<div class="whatsapp"><a href="#" class="fa fa-whatsapp" style="color:rgb(2, 172, 2)"> Whatsapp</a></div>
-<div class="linkedin"><a href="#" style="color:#0A66A2" class="fa fa-linkedin"> Linkedin</a></div>
+<div class="instagram"><a href="https://www.instagram.com/techcrescenza2k24" target="_blank" style="color:#d30035" class="fa fa-instagram"> Instagram</a></div>
+<div class="whatsapp"><a href="https://wa.me/7010354265/" target="_blank" class="fa fa-whatsapp" style="color:rgb(2, 172, 2)"> Whatsapp</a></div>
+<div class="linkedin"><a href="mailto:techcrescenza2k24@gmail.com" target="_blank" style="color:#0A66A2" class="fa fa-envelope"> Mail</a></div>
+<div class="busroute"><a href="./rmdbus.pdf" target="_blank" style="color:gold" class="fa fa-bus"> Bus route</a></div>
 </div>
 </section>
 `
@@ -121,8 +122,8 @@ Register before 31st January 2024. Participate and win exciting prizes.
     ScrollReveal().reveal('.about', { duration: 1000 });
     ScrollReveal().reveal('.events', { reset: true });
     ScrollReveal().reveal('.events', { duration: 1000 });
-    ScrollReveal().reveal('.nontechevents', { duration: 1000 });
-    ScrollReveal().reveal('.nontechevents', { reset: true });
+    // ScrollReveal().reveal('.nontechevents', { duration: 1000 });
+    // ScrollReveal().reveal('.nontechevents', { reset: true });
     // ScrollReveal().reveal('.icons');
     // ScrollReveal().reveal('.contact', { reset: true });
     var i = 0;
@@ -227,18 +228,34 @@ function openDiv() {
     let get = document.getElementById('div')
     // hovertext.style./display = 'none'
     get.style.display = 'block'
+    let blurcontainer5 = document.getElementById('nonevent1')
+    let blurcontainer4 = document.getElementById('nonevent2')
+    // let blurcontainer3 = document.getElementById('event3')
+    blurcontainer5.style.display = 'none'
+    blurcontainer4.style.display = 'none'
+    // blurcontainer3.style.opacity = '0'
+    // let get1 = document.getElementById('div1')
+    // // hovertext.style./display = 'none'
+    // get1.style.display = 'block'
+    // get.style.transition = '2s'
 }
 function openDiv1() {
-    let blurcontainer1 = document.getElementById('nonevent1')
-    let blurcontainer2 = document.getElementById('nonevent2')
-    // let blurcontainer3 = document.getElementById('event3')
-    blurcontainer1.style.display = 'none'
-    blurcontainer2.style.display = 'none'
-    // blurcontainer3.style.opacity = '0'
+    // let blurcontainer1 = document.getElementById('nonevent1')
+    // let blurcontainer2 = document.getElementById('nonevent2')
+    // // let blurcontainer3 = document.getElementById('event3')
+    // blurcontainer1.style.display = 'none'
+    // blurcontainer2.style.display = 'none'
+    // // blurcontainer3.style.opacity = '0'
     let get = document.getElementById('div1')
     // hovertext.style./display = 'none'
     get.style.display = 'block'
     // get.style.transition = '2s'
+    // let blurcontainer3 = document.getElementById('event1')
+    // let blurcontainer4 = document.getElementById('event2')
+    // let blurcontainer5 = document.getElementById('event3')
+    // blurcontainer3.style.opacity = '0'
+    // blurcontainer4.style.display = 'none'
+    // blurcontainer5  .style.opacity = '0'
 }
 function closeDiv() {
     let blurcontainer1 = document.getElementById('event1')
@@ -250,13 +267,24 @@ function closeDiv() {
 
     let get = document.getElementById('div')
     get.style.display = 'none'
+    let blurcontainer4 = document.getElementById('nonevent1')
+    let blurcontainer5 = document.getElementById('nonevent2')
+    // let blurcontainer3 = document.getElementById('event3')
+    blurcontainer4.style.display = 'block'
+    blurcontainer5.style.display = 'block'
 }
 function closeDiv1() {
-    let blurcontainer1 = document.getElementById('nonevent1')
-    let blurcontainer2 = document.getElementById('nonevent2')
-    // let blurcontainer3 = document.getElementById('event3')
-    blurcontainer1.style.display = 'block'
+    let blurcontainer1 = document.getElementById('event1')
+    let blurcontainer2 = document.getElementById('event2')
+    let blurcontainer3 = document.getElementById('event3')
+    blurcontainer1.style.opacity = '1'
     blurcontainer2.style.display = 'block'
+    blurcontainer3.style.opacity = '1'
+    let blurcontainer4 = document.getElementById('nonevent1')
+    let blurcontainer5 = document.getElementById('nonevent2')
+    // let blurcontainer3 = document.getElementById('event3')
+    blurcontainer4.style.display = 'block'
+    blurcontainer5.style.display = 'block'
     // blurcontainer3.style.opacity = '1'
 
     let get = document.getElementById('div1')
@@ -344,3 +372,5 @@ if (width > 1000) {
 
     })
 }
+
+

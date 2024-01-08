@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <title>Index</title>
+    <title>Techcrescenza'24</title>
+    <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico">
     <link href="./stylesheet.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,7 +64,44 @@
                 alert('Right click is disabled')
                 return false;
             }
+            else if ((event.ctrlKey && event.shiftKey && event.keyCode == 67) || (event.ctrlKey && event.shiftKey && event.keyCode == 75)) {
+                alert('Right click is disabled')
+                return false;
+            }
         });
+    
+
+
+
+    //     !function() {
+    //     function detectDevTool(allow) {
+    //         if(isNaN(+allow)) allow = 100;
+    //         var start = +new Date();
+    //         debugger;
+    //         var end = +new Date();
+    //         if(isNaN(start) || isNaN(end) || end - start > allow) {
+                
+    //             console.log('DEVTOOLS detected '+allow);
+    //         }
+    //     }
+    //     if(window.attachEvent) {
+    //         if (document.readyState === "complete" || document.readyState === "interactive") {
+    //             detectDevTool();
+    //           window.attachEvent('onresize', detectDevTool);
+    //           window.attachEvent('onmousemove', detectDevTool);
+    //           window.attachEvent('onfocus', detectDevTool);
+    //           window.attachEvent('onblur', detectDevTool);
+    //         } else {
+    //             setTimeout(argument.callee, 0);
+    //         }
+    //     } else {
+    //         window.addEventListener('load', detectDevTool);
+    //         window.addEventListener('resize', detectDevTool);
+    //         window.addEventListener('mousemove', detectDevTool);
+    //         window.addEventListener('focus', detectDevTool);
+    //         window.addEventListener('blur', detectDevTool);
+    //     }
+    // }();
     </script>
 </head>
 
@@ -74,7 +112,7 @@
 
 
 
-    <section id="first" class="first"><span class="fast-flicker">T</span>ech<span class="flicker">C</span>rescenza
+    <section id="first" class="first"><span class="fast-flicker">T</span>ech<span class="flicker">C</span>rescenza '24
     </section>
 
     <div id="reload"></div>
