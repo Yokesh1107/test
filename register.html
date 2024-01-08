@@ -66,6 +66,7 @@
             let x = document.forms["myform"]["phone"].value;
             if (x.length != 10) {
                 alert('Enter valid phone number')
+                return
 
             }
             let x1 = document.forms["myform"]["event1"].checked;
@@ -75,6 +76,7 @@
             let x5 = document.forms["myform"]["event5"].checked;
             if (!x1 && !x2 && !x3 && !x4 && !x5) {
                 alert("Select atleast one event")
+                return
             }
             e.preventDefault();
             var elements = document.getElementById("formid").elements;
