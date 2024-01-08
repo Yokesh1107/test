@@ -87,7 +87,7 @@ Register before 31st January 2024. Participate and win exciting prizes.
 
 
 </div></div>
-<div class="containerbox1" id="nonevent2"><div class="eventcontent1"><h1>Suprise Event</h1><p>Register and wait for the suprise event</p></div><div class="slogan"><p>!    !     !</p></div><div class="eventbutton"><button ><a href="register.html" style="text-decoration:none;">Register</a></button></div><div class="hovertext">Suprise event!!!!!!!!!!</div></div></div></section>
+<div class="containerbox1" id="nonevent2"><div class="eventcontent1"><h1>Surprise Event</h1><p>Register and wait for the surprise event</p></div><div class="slogan"><p>!    !     !</p></div><div class="eventbutton"><button ><a href="register.html" style="text-decoration:none;">Register</a></button></div><div class="hovertext">Surprise event!!!!!!!!!!</div></div></div></section>
 <section class="contact" id="contact">
 <h1 class="topic">Contact Us</h1>
 <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.858432787611!2d80.13819837508319!3d13.359077486993044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d807d6e1207f9%3A0x2beed88a75a3fe40!2sR.M.D.%20Engineering%20college!5e0!3m2!1sen!2sin!4v1696180906328!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
