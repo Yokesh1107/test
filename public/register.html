@@ -61,23 +61,14 @@
         </div>
     </div>
     <script>
-        const validatePhone=()=>{
-
-           
-            return true;
-        }
-        const eventSelection=()=>{
-
-           
-            return true;
-        }
-        const print = async (e) => {
+       const print = async (e) => {
             console.log("clicked")
             document.getElementById('loading').style.visibility = 'visible'
             let x = document.forms["myform"]["phone"].value;
             if (x.length != 10) {
                 alert('Enter valid phone number')
-                e.preventDefault()
+                return
+
             }
             let x1 = document.forms["myform"]["event1"].checked;
             let x2 = document.forms["myform"]["event2"].checked;
@@ -85,11 +76,10 @@
             let x4 = document.forms["myform"]["event4"].checked;
             let x5 = document.forms["myform"]["event5"].checked;
             if (!x1 && !x2 && !x3 && !x4 && !x5) {
-                alert('select atleast one event')
-                e.preventDefault();
+                alert("Select atleast one event")
+                return
             }
-
-            
+            e.preventDefault();
             var elements = document.getElementById("formid").elements;
             const obj = {};
             for (var i = 0; i < elements.length; i++) {
