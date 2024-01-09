@@ -86,10 +86,10 @@
             if(!validatePhone()){
                 
                 alert('Enter valid phone number')
-                // e.preventDefault();
+                e.preventDefault();
             }else if(!eventSelection()){
                 alert('select atleast one event');
-                // e.preventDefault();
+                e.preventDefault();
             }else{
                 document.getElementById('loading').style.visibility = 'visible'
 
