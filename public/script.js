@@ -3,8 +3,22 @@ const changeDept = () => {
     document.getElementById('dept').innerHTML = `DEPARTMENT OF <span class="fast-flicker" id="cap1" >I</span>NFORMATION <span id="cap2" class="fast-flicker">T</span>ECHNOLOGY`
 
 }
+const openMenu=()=>{
+    document.getElementById('mobile-links').style.display='flex';
+    // document.getElementById('mobile-links').style.translateX='-20em';
+    document.getElementById('rmdlogo').style.display='none'
+    return true;
+}
+const closeMenu=()=>{
+    document.getElementById('mobile-links').style.display='none';
+    document.getElementById('rmdlogo').style.display='flex'
 
-
+}
+const checkMenu=()=>{
+    if(openMenu()){
+        closeMenu()
+    }
+}
 var x = 1
 const reload = () => {
     document.getElementById('first').remove()
@@ -17,18 +31,28 @@ const reload = () => {
         <a href="#events">EVENTS</a>
         <a href="./register.html">REGISTER</a>
         <a href="#contact">CONTACT US</a>
+        </nav>
+        <div id="menu"><a onclick=openMenu()><svg xmlns="http://www.w3.org/2000/svg" height="70" viewBox="0 -960 960 960" width="70"><path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"/></svg></a></div>
+        <nav class="mobile-links" id="mobile-links">
+        <div id="close" onclick=closeMenu()><svg xmlns="http://www.w3.org/2000/svg" height="70" viewBox="0 -960 960 960" width="70"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+        <a href="#" onclick=checkMenu()>HOME</a>
+        <a href="#about" onclick=checkMenu()>ABOUT</a>
+        <a href="#events" onclick=checkMenu()>EVENTS</a>
+        <a href="./register.html" onclick=checkMenu()>REGISTER</a>
+        <a href="#contact" onclick=checkMenu()>CONTACT US</a>
     </nav>
 
 </header>
 
-<marquee width="100%" direction="right" height="100px" >
-Event Date: <span  style="font-size:25px;font-weight:bolder">5th Febraury</span>. Register before 31st January 2024. Participate and win exciting prizes.
+<marquee width="100%" direction="right" height="100px" id="mq" >
+Event Date: <span  style="font-size:40px;font-weight:bolder">5th Febraury 2024</span>. Register before 31st January 2024. Participate and win exciting cash prizes.
 </marquee>
 <section class="home" id="home">
 
 
 <div id="clgdept">
-<h1 id="welcome"><img src='./rmd_logo.png' id='rmdlogo'><span id="college" >RMD ENGINEERING COLLEGE</span><br/></h1>
+<h1 id="welcome"><img src='./rmd_logo.png' id='rmdlogo'><span id="college" >R.M.D. ENGINEERING COLLEGE</span><br/></h1>
+<div id="tag"><span id="auto">(An Autonomous Institution)</span><br>Approved by AICTE, New Delhi & Affiliated to Anna University, Chennai<br>All the Eligible UG Programs are Accredited by NBA & Institution Accredited by NAAC</div>
 <br/>
 <h2 id="dept">DEPARTMENT OF <span class="fast-flicker" id="cap1" >I</span>NFORMATION <span id="cap2" class="fast-flicker">T</span>ECHNOLOGY</h2>
 <p id="p">PROUDLY PRESENTS</p>
@@ -95,7 +119,7 @@ Event Date: <span  style="font-size:25px;font-weight:bolder">5th Febraury</span>
 <div class="instagram"><a href="https://www.instagram.com/techcrescenza2k24" target="_blank" style="color:#d30035" class="fa fa-instagram"> Instagram</a></div>
 <div class="whatsapp"><a href="https://wa.me/7010354265/" target="_blank" class="fa fa-whatsapp" style="color:rgb(2, 172, 2)"> Whatsapp</a></div>
 <div class="linkedin"><a href="mailto:techcrescenza2k24@gmail.com" target="_blank" style="color:#0A66A2" class="fa fa-envelope"> Mail</a></div>
-<div class="busroute"><a href="./rmdbus.pdf" target="_blank" style="color:gold" class="fa fa-bus"> Bus route</a></div>
+<div class="busroute"><a href="./rmdbus.pdf" target="_blank" style="color:rgb(255, 0, 212)" class="fa fa-bus"> Bus route</a></div>
 </div>
 </section>
 `
@@ -276,6 +300,13 @@ if (width > 1000) {
         } else {
             screentopic.style.fontSize = 0
             college.style.fontSize = 0 + 'px'
+
+        }
+        
+        if (value === 0) {
+            tag.style.fontSize = 15 + 'px'
+        } else {
+            tag.style.fontSize = 0 + 'px'
 
         }
         if (value === 0) {
