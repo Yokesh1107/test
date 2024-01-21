@@ -199,7 +199,7 @@ function event2() {
     abc.innerHTML = `<h1>Code Quasar</h1>
     <button onclick="closeDiv()">X</button>`
     bcd.innerHTML = `<ul><li>This is a Coding Event.</li><li>This event consist of three rounds.</li><li>Each round is an elimination round.</li><li>Required hardware and software assistance will be provided at the venue</li></ul>`
-    cde.innerHTML = `<ul><li>2 participants from each group can participate.</li><li>Participants must have an HACKERRANK Account</li><li>Time limit for each round will be mentioned in the platform.</li><li>In case of tie break participant with first correct submission of all problems will be rewarded.</li></ul>`
+    cde.innerHTML = `<ul><li>2 participants from each group can participate.</li><li>Participants must have an HACKERRANK Account</li><li>Sign Up at <a href="https://www.hackerrank.com/code-quasar-1">hacker rank entry event</a></li><li>Time limit for each round will be mentioned in the platform.</li><li>In case of tie break participant with first correct submission of all problems will be rewarded.</li></ul>`
     openDiv()
 }
 function nonevent2() {
