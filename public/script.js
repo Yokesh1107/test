@@ -45,7 +45,7 @@ const reload = () => {
 </header>
 
 <marquee width="100%" direction="right" height="100px" id="mq" >
-Event Date: <span  style="font-size:40px;font-weight:bolder">5th Febraury 2024</span>. Register before 31st January 2024. Participate and win exciting cash prizes.
+Event Date: <span  style="font-size:40px;font-weight:bolder">5th Febraury 2024</span>. Register before 4th Febraury January 2024. Participate and win exciting cash prizes.
 </marquee>
 <section class="home" id="home">
 
