@@ -1,123 +1,36 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-    <title>Registration</title>
-    <link rel="icon" type="image/x-icon" href="./favicon_io/favicon.ico">
-    <link rel="stylesheet" href="./forms.css">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-</head>
-
-
-<body>
-    <div class="custom-scrollbar">
-        <div class="homeicon"><a href="./index.html"><img src="./home.png"> </div></a>
-        <div class="forms">
-            <h1>REGISTRATION FORM</h1>
-            <form method="post" id="formid" onsubmit="print(event)" class="formelements" name="myform">
-                <div class="formelement"><label>Leader * :</label> <input type="text" id="teamleader" name="teamleader"
-                        required><br />
-                </div>
-                <div class="formelement"><label>Team member 1 * :</label> <input type="text" id="team1" name="team1"
-                        required><br />
-                </div>
-                <div class="formelement"><label>Team member 2 * :</label> <input type="text" id="team2" name="team2"
-                        required><br />
-                </div>
-                <div class="formelement"><label>Team member 3 :</label> <input type="text" id="team3" name="team3"
-                        placeholder="optional"><br />
-                </div>
-                <div class="formelement"><label>College name * : </label><input type="text" id="clg" name="clg"
-                        required><br /></div>
-                <div class="formelement"><label>Department * :</label> <input type="text" id="dept" name="dept"
-                        required><br /></div>
-                <div class="formelement"><label>Year * :</label> <input type="text" id="year" name="year"
-                        required><br />
-                </div>
-                <div class="formelement"><label>Mail * :</label> <input type="email" id="mail" name="mail"
-                        required><br />
-                </div>
-                <div class="formelement"><label for="events" name="events" id="events">Events * : </label></div>
-
-                <div class="formelement" style="color: aliceblue;text-shadow: 2px 2px black;">
-                    <div class="input1"><input type="checkbox" id="event1" name="event1">Scriptoria's Secret
-                        <input type="checkbox" id="event2" name="event2">Code Quasar
-                        <input type="checkbox" id="event3" name="event3">Mensa Mingle
-                        <input type="checkbox" id="event4" name="event4">Croma Meister
-                        <input type="checkbox" id="event5" name="event5">Surprise Event<br />
-                    </div>
-                </div>
-                <div class="formelement"><label>Phone Number * :</label> <input type="number" id="phone" name="phone"
-                        required><br />
-                </div>
-                <input type="submit" class="submit" value="Register">
-                <div id="loading"></div>
-            </form>
-        </div>
-    </div>
-    <script>
-       const print = async (e) => {
-            console.log("clicked")
-            document.getElementById('loading').style.visibility = 'visible'
-            let x = document.forms["myform"]["phone"].value;
-            if (x.length != 10) {
-                alert('Enter valid phone number')
-                return
-
+    <head>
+        <title>
+            Closed
+        </title>
+        <style>
+            body{
+                text-align: center;
             }
-            let x1 = document.forms["myform"]["event1"].checked;
-            let x2 = document.forms["myform"]["event2"].checked;
-            let x3 = document.forms["myform"]["event3"].checked;
-            let x4 = document.forms["myform"]["event4"].checked;
-            let x5 = document.forms["myform"]["event5"].checked;
-            if (!x1 && !x2 && !x3 && !x4 && !x5) {
-                alert("Select atleast one event")
-                return
+            #heading{
+                font-size: 50px;
+                margin-top: 50px;
+                color: red;
             }
-            e.preventDefault();
-            var elements = document.getElementById("formid").elements;
-            const obj = {};
-            for (var i = 0; i < elements.length; i++) {
-                var item = elements.item(i);
-                if (item.type == 'checkbox') {
-                    obj[item.name] = item.checked
-
-                } else {
-
-                    obj[item.name] = item.value;
-                }
-                // if(item.name=='event1'||item.name=='event2'||item.name=='event3'||item.name=='event4'||item.name=='event5')
+            p{
+                font-size: 20px;
             }
-            // console.log(radio.value)
-            console.log(obj)
-            const res = await fetch('https://registers.onrender.com/register', {
-                method: 'POST',
-                // mode: 'no-cors',
-                body: JSON.stringify(obj),
-                headers: { 'Content-type': 'application/json' },
-                credentials: 'include',
-            })
-
-            if (res.status === 200) {
-                document.getElementById('loading').visibility = 'hidden'
-                // hideLoading()
-                alert('registration succesful')
-                location.replace('./index.html')
+            #number{
+                color: rgb(0, 255, 106);
+                font-weight: bolder;
             }
-            if (res.status === 500) {
-                alert('Enter all the required details correctly')
+            #note{
+                background-color: blueviolet;
+                color: white;
+                padding: 10px;
             }
-
-        }
-    
-    </script>
-    <!-- <script src="../register.js"></script> -->
-
-</body>
-
+        </style>
+    </head>
+    <body>
+        <h1 id="heading">REGISTRATIONS CLOSED</h1>
+        <p>Kindly visit our college tomorrow for direct registrations</p>
+        <p id="note">Note : Those who wanna participate in Paper presentation event kindly send your papers to <span id="number">+91 97892 60864  </span>along with your name and college name</p>
+        <h1>THANK YOU</h1>
+        <p>-Team Techcrescenza 2K24</p>
+    </body>
 </html>
